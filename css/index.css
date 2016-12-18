@@ -1,0 +1,171 @@
+body,html{
+	margin:0;padding:0;width:100%;height:100%;
+}
+ul{
+	margin:0;padding:0;
+}
+#swiper-container2{
+	width:100%;height:0.9rem;
+	background: #007FFF;color:#A0CFFF;
+}
+#swiper-container2 .swiper-slide{
+	font-size: 0.25rem;text-align: center;line-height: 0.9rem;
+	width:1.2rem;height:0.9rem;
+}
+#swiper-container3{
+	height:11.5rem;background: #F5F7F8;
+}
+
+
+.hot{
+width:7.5rem;height:5.65rem;margin:0.25rem auto;
+background: #fff;
+}
+.hot-title{
+    width: 7.5rem;height:0.76rem;border-bottom: 0.02rem solid #CDD2D7;
+    padding:0 0.3rem;box-sizing: border-box;
+}
+.hot-title-icon{
+	width: 0.22rem;height:0.28rem;margin-right: 0.15rem;float: left;
+	margin-top: 0.24rem;
+}
+.hot-title-txt{
+	color: #007FFF;font-size: 0.24rem;float: left;margin-top: 0.23rem;
+}
+.refresh{
+	width: 0.34rem;height:0.27rem;float: right;margin-right: 0.45rem;margin-top: 0.23rem;
+}
+.hot-title-close{
+	width: 0.26rem;height:0.26rem;float: right;margin-top: 0.25rem;
+}
+
+.hot-content{
+	width: 100%;height:1.65rem;padding:0.28rem;
+	box-sizing: border-box;display: block;color:#000000;
+	border-bottom: 0.01rem solid #CCCCCC;
+}
+.hot-content:last-of-type{
+	border:0;
+}
+.hot-content-text{
+	float: left;
+}
+.hot-content-text h1{
+	font-size: 0.23rem;
+}
+.tuijian{
+	width: 1rem;height:0.34rem;border:0.02rem solid #F79700;
+	text-align: center;line-height: 0.34rem;font-size: 0.20rem;
+	margin-top: 0.20rem;color: #F79700;
+}
+.hot-content-img{
+	float: right;width: 1.11rem;height: 1.11rem;background: #000000;
+}
+
+
+.container{
+	width: 100%;height:auto;
+	padding-bottom: 1rem;
+}
+.content{
+    width: 100%;height:auto;border-top:0.01rem solid #CDD2D7;
+    border-bottom:0.01rem solid #CDD2D7;margin-bottom: 0.15rem;
+    padding:0.2rem;box-sizing: border-box;background: #fff;
+}
+.content-list1{
+    width:100%;height:auto;
+}
+.content-list1:before,.content-list1:after{
+    content: "";display: block;
+}
+.content-list1:after{
+    clear: both;
+}
+.userHead{
+    width: 0.56rem;height:0.56rem;background: lightcoral;float: left;
+    margin-right: 0.15rem;
+}
+.username{
+    color: #003B76;font-size: 0.24rem;display: block;
+}
+.sort{
+    float: right;color:#C4C4C4;font-size: 0.22rem;
+}
+.information{
+    color:#C4C4C4;font-size: 0.22rem;
+}
+.user{
+    float: left;
+}
+.content-list2{
+    margin: 0.25rem 0;font-size: 0.25rem;color:#000;
+}
+.content-list3{
+	display: block;
+    width: 100%;height:1.1rem;border:0.01rem solid #F0F2F3;display: flex;align-items: center;
+}
+.textimg{
+    width:1.1rem;height:1.1rem;background: #E2E8ED;float: left;margin-right: 0.25rem;
+}
+.content-list3 h1{
+    font-size: 0.28rem;color:#000;
+}
+.content-list4{
+    width: 100%;height:0.4rem;margin-top: 0.25rem;display: flex;align-items: center;
+}
+.zan{
+    width: 0.4rem;height:0.35rem;float: left;margin-right: 0.1rem;
+}
+.zan-num{
+    font-size: 0.2rem;color:#B4B4B4;float: left;margin-right: 0.15rem;
+    margin-top: 0.25rem;
+}
+.reply{
+    width: 0.4rem;height:0.37rem;float:left;margin-top: 0.1rem;
+}
+
+
+
+#wrapper1{
+		width:100%;height:11rem;background: #fff;
+		overflow: hidden;
+	}
+	#wrapper1 ul{
+		width:100%;height:auto;margin:0;padding-bottom: 2rem;
+	}
+	#wrapper1 li{
+		width:100%;height:1.55rem;border-bottom: 0.02rem solid #ECECEC;
+		padding:0.2rem;box-sizing: border-box;
+		display: flex;align-items: center;
+	}
+	.li-img{
+		width:1.1rem;height:1.1rem;background: paleturquoise;
+	}
+	.li-con{
+		margin-left: 0.25rem;max-width: 5.6rem;color: #3E3E3E;
+	}
+	.li-con h1{
+		font-size: 0.3rem;font-weight: bold;line-height: 0.4rem;
+	}
+	.li-con p{
+		font-size: 0.2rem;color:#C7C7C7;margin-top: 0.15rem;
+	}
+	.li-con p span:nth-child(2),.li-con p span:nth-child(4),.li-con p span:nth-child(6){
+		margin-left: 0.05rem;	margin-right: 0.05rem;
+	}
+	
+
+
+.footer{
+    position: absolute;left: 0;bottom:0;background:#fff;
+    width: 7.5rem;height: 0.9rem;border-top:0.01rem solid #CDD2D7;
+    display: flex;align-items: center;justify-content: space-between;
+    z-index: 99;
+}
+.footer-list{
+    width: 25%;height:100%;display: flex;align-items: center;
+    justify-content: center;
+}
+.footer-list-img{
+    width: 0.5rem;height:0.45rem;
+}

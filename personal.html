@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="js/base.js"></script>
+</head>
+<style>
+	*{
+		margin:0;padding:0;list-style: none;text-decoration: none;
+	}
+	body,html{
+		width:100%;height:100%;background: #F4F6F9;
+	}
+	header{
+		width:100%;height: 1.04rem;background: #fff;
+		border-bottom: 0.02rem solid #ECECEC;
+		display: flex;align-items: center;
+		padding:0 0.3rem;box-sizing: border-box;
+	}
+	.return{
+		width:0.31rem;height:0.31rem;
+		font-size: 0.31rem; line-height: 0.31rem;color:#000000;font-weight: bold;
+	}
+	.title{
+		font-size: 0.34rem;margin-left: 0.4rem;font-weight: bold;
+	}
+	.userbox{
+		width:100%;height:2.83rem;background: white;
+		border-top: 0.02rem solid #ececec;
+		border-bottom: 0.02rem solid #ececec;
+		margin:0.23rem 0;padding-left: 0.3rem;padding-top: 0.3rem;
+		padding-right: 0.3rem;
+		box-sizing: border-box;
+	}
+	.line1{
+		width:100%;height:1.2rem;
+	}
+	.usericon{
+		width:1.2rem;height:1.2rem;border-radius: 50%;
+		background: lightblue;display: block;float: left;
+		margin-right: 0.3rem;
+	}
+	.username{
+		font-size: 0.23rem;line-height: 1.2rem;font-weight: bold;
+	}
+	.line2{
+		width:100%;height:auto;display: flex;
+		justify-content: space-between;align-items: center;
+	}
+	.leftbox{
+		width: 2.1rem;height:auto;display: flex;
+		display: flex;justify-content: space-between;margin-top: 0.4rem;
+		float: left;
+	}
+	.leftbox a{
+		display: block; color:#000000;
+	}
+	.b1{
+		font-size: 0.23rem;font-weight: bold;
+	}
+	.b1 span{
+		color: #848484;font-size: 0.2rem;font-weight: normal;
+	}
+	.rightbox{
+		float: right;width:1.2rem;height:0.6rem;
+		border:0.02rem solid #0069FF;border-radius: 0.05rem;
+		color:#0069ff;font-size: 0.21rem;text-align: center;line-height: 0.6rem;
+	}
+	.dongtai{
+		font-size: 0.26rem;width:100%;height:0.97rem;
+		background: #FFF;border-top:0.02rem solid #ececec;
+		border-bottom:0.02rem solid #ececec;
+		padding:0.3rem;box-sizing: border-box;font-weight: bold;
+		display: block;color:#000000;margin-bottom: 0.23rem;
+	}
+	.dongtai span{
+		float: right;color:#C9C9C9;
+	}
+</style>
+<body>
+	<header>
+		<a href="aboutMe.html" class="return">
+			<img src="img/re.jpg" alt="" / style="width:100%;height:100%;">
+		</a>
+		<div class="title">个人主页</div>
+	</header>
+	<div class="userbox">
+		<div class="line1">
+			<a href="javascript:;" class="usericon">
+				<img src="img/mmm.jpg" alt="" / style="width:100%;height:100%;border-radius: 50%;">
+			</a>
+			<div class="username">ZYDragon</div>
+		</div>
+		<div class="line2">
+			<div class="leftbox">
+				<div class="b1">
+					<a href="javascript:;">6</a>
+					<span>关注</span>
+				</div>
+				<div class="b1">
+					<a href="javascript:;">0</a>
+					<span>关注者</span>
+				</div>
+			</div>
+			<a href="javascript:;" class="rightbox">
+				编辑
+			</a>
+		</div>
+	</div>
+	<a href="javascript:;" class="dongtai">动态</a>
+	<a href="javascript:;" class="dongtai">收藏
+		<span>50</span>
+	</a>
+	<a href="javascript:;" class="dongtai">关注的收藏
+		<span>32</span>
+	</a>
+</body>
+</html>

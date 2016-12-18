@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link href="css/mui.min.css" rel="stylesheet" />
+
+	<script src="js/zepto.js"></script>
+	<script src="js/base.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="fonts/iconfont.css" />
+</head>
+<body>
+	<div class="swiper-container swiper-container-horizontal" id="swiper-container2" style="width:100%;">
+	<div class="swiper-wrapper" style="width:100%;">
+		<div class="swiper-slide active-nav swiper-slide-visible swiper-slide-active" style="width: 50%;">
+			版块1</div>
+		<div class="swiper-slide swiper-slide-visible swiper-slide-next" style="width: 50%;">
+			版块2</div>
+		
+	</div>
+</div>
+<div class="swiper-container swiper-container-horizontal" id="swiper-container3" style="width:100%;">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide blue-slide swiper-slide-active" style="width: 100%;">
+			slider1</div>
+		<div class="swiper-slide red-slide swiper-slide-next" style="width: 100%;">
+			slider2</div>
+	</div>
+</div>
+	
+	
+	
+	<div class="footer ">
+    <a class="footer-list mui-active" href="index.html">
+        <div class="footer-list-img mui-icon mui-icon-home" style="font-size: 0.6rem;"></div>
+    </a>
+    <a class="footer-list" href="search.html">
+        <div class="footer-list-img mui-icon mui-icon-search" style="font-size: 0.6rem;"></div>
+    </a>
+    <a class="footer-list" href="message.html">
+        <div class="footer-list-img mui-icon mui-icon-chatbubble" style="font-size: 0.6rem;"></div>
+    </a>
+    <a class="footer-list " href="aboutMe.html">
+        <div class="footer-list-img mui-icon mui-icon-person" style="font-size: 0.6rem;"></div>
+    </a>
+</div>
+</body>
+<script> 
+
+
+var mySwiper2 = new Swiper('#swiper-container2',{
+watchSlidesProgress : true,
+watchSlidesVisibility : true,
+slidesPerView : 3,
+onTap: function(){
+			mySwiper3.slideTo( mySwiper2.clickedIndex)
+		}
+})
+var mySwiper3 = new Swiper('#swiper-container3',{
+
+onSlideChangeStart: function(){
+			updateNavPosition()
+		}
+
+})
+
+function updateNavPosition(){
+		$('#swiper-container2 .active-nav').removeClass('active-nav')
+		var activeNav = $('#swiper-container2 .swiper-slide').eq(mySwiper3.activeIndex).addClass('active-nav');
+
+
+		if (!activeNav.hasClass('swiper-slide-visible')) {
+console.log(1);
+			if (activeNav.index()>mySwiper2.activeIndex) {
+console.log(2);
+				var thumbsPerNav = Math.floor(mySwiper2.width/activeNav.width())-1
+				mySwiper2.slideTo(activeNav.index()-thumbsPerNav)
+			}
+			else {
+console.log(3);
+				mySwiper2.slideTo(activeNav.index())
+			}	
+		}
+	}
+</script>
+
+
+
+<script src="js/mui.min.js"></script>
+
+	<script type="text/javascript">
+		mui.init()
+	</script>
+</html>

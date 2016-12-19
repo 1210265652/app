@@ -19,16 +19,16 @@
 	<div class="swiper-container swiper-container-horizontal" id="swiper-container2" style="width:100%;">
 	<div class="swiper-wrapper" style="width:100%;">
 		<div class="swiper-slide active-nav swiper-slide-visible swiper-slide-active" style="width: 50%;">
-			版块1</div>
+			消息</div>
 		<div class="swiper-slide swiper-slide-visible swiper-slide-next" style="width: 50%;">
-			版块2</div>
+			动态</div>
 		
 	</div>
 </div>
 <div class="swiper-container swiper-container-horizontal" id="swiper-container3" style="width:100%;">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide blue-slide swiper-slide-active" style="width: 100%;">
-			slider1</div>
+			暂无消息！</div>
 		<div class="swiper-slide red-slide swiper-slide-next" style="width: 100%;">
 			slider2</div>
 	</div>
@@ -57,7 +57,7 @@
 var mySwiper2 = new Swiper('#swiper-container2',{
 watchSlidesProgress : true,
 watchSlidesVisibility : true,
-slidesPerView : 3,
+slidesPerView : 2,
 onTap: function(){
 			mySwiper3.slideTo( mySwiper2.clickedIndex)
 		}
